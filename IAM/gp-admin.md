@@ -1,3 +1,7 @@
+## Purpose
+The GP Admin department oversees all Global Power systems, user access and IAM governance. This role ensures systems integrity, manages AWS accounts, and maintains operational security across OSS and BSS environments.
+
+
 ## Core Permissions
 
 -Full read/write access across OSS and BSS systems
