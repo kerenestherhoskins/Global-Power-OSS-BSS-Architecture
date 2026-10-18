@@ -9,3 +9,9 @@ The GP Operations department manages day-to-day telecom operations, including pr
 -Ability to execute operational scripts and automation tools
 -Access to networks inventory and service activation logs.
 -Limited access to BSS order-management for provisioning aligmnt
+
+## Responsibilies
+-Execute provisiong, activation, and monitoring workflows
+-Maintain network inventory and ensure service continuity
+-Collaborate with GP Support for issue resolution
+-Document operational changes and update OSS procedures
