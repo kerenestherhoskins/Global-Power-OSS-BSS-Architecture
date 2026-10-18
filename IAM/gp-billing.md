@@ -1,3 +1,9 @@
+## Purpose
+The GP billing department manages invoicing, payment processing, account reconciliation, and financial reporting. This role ensures accurate billing and support revenue assurance.
+
+
+
+
 ## Core Permissions
 -Read/write access to BSS billing and revenue assurance workflows
 -Ability to generate invoices, process payments, and reconcile accounts
