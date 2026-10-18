@@ -14,7 +14,21 @@ Resources:
               AWS: arn:aws:iam::ACCOUNT-ID:root
             Action: sts:AssumeRole
       ManagedPolicyArns:
-        - arn:aws:iam::aws:policy/AdministratorAccess
+        - arn:aws:iam::aws:policy/AdministratorAccessPolicies:
+  - PolicyName: GP-Operations-Inline
+    PolicyDocument:
+      Version: '2012-10-17'
+      Statement:
+        - Effect: Allow
+          Action:
+            - lambda:InvokeFunction
+            - s3:GetObject
+            - s3:PutObject
+            - cloudwatch:GetMetricData
+            - cloudwatch:DescribeAlarms
+          Resource: "*"
+
+        
       Tags:
         - Key: Department
           Value: [Department]
