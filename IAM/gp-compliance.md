@@ -1,3 +1,8 @@
+## Purpose
+The GP Compliance department ensures regulatory adherence, federal contracting compliance, and internal audit readiness. This role reviews IAM policies, monitors system access, and maintains documentation for audits.
+
+
+
 ## Core Permissions
 -Read-only access across all OSS and BSS systems for audit purposes
 -Ability to generate compliance reports and review IAM policies
