@@ -16,17 +16,16 @@ Resources:
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/AdministratorAccess
 Policies:
-  - PolicyName: GP-Admin-Inline
+  - PolicyName: GP-Billing-Inline
     PolicyDocument:
       Version: '2012-10-17'
       Statement:
         - Effect: Allow
           Action:
-            - iam:CreateRole
-            - iam:DeleteRole
-            - iam:AttachRolePolicy
-            - organizations:DescribeOrganization
-            - cloudtrail:StartLogging
+            - ce:GetCostAndUsage
+            - dynamodb:UpdateItem
+            - s3:GetObject
+            - s3:PutObject
           Resource: "*"
       Tags:
         - Key: Department
