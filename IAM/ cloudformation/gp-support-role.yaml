@@ -1,1 +1,28 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: CloudFormation template for GP [Department] IAM Role
+
+Resources:
+  GP[Department]Role:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: GP-[Department]-Role
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              AWS: arn:aws:iam::ACCOUNT-ID:root
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AdministratorAccess
+      Tags:
+        - Key: Department
+          Value: [Department]
+        - Key: Environment
+          Value: Production
+        - Key: ManagedBy
+          Value: GP Admin
+Outputs:
+  RoleName:
+    Value: !Ref GP[Department]Role
 
